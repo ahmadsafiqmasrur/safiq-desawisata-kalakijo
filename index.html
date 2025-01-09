@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Wisata Kalakijo</title>
+    <link rel="icon" type="image/png" href="assets/logo title.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+<body>
+
+    <nav class="custom-navbar">
+        <div class="nvbr">
+        <div class="logo"><img src="assets/dwk 1.png"></div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-us">About</a></li>
+            <li><a href="#paket">Paket</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+           <li ><a href="https://wa.me/085880315397" class="kontak">Contact</a></li>
+        </ul>
+    </nav>
+        <script src="script.js"></script>
+
+<div id="home" class="main-container">
+   <div class="box-gambar">
+    <img src="assets/klkijo.jpg" class="slide-box" >
+   </div>
+   <div class="ov-book">
+   <div class="oval"></div>
+   <div class="box-lest-booking" onclick="openNewPage1()"><p class="text-booking">Booking Now</p></div>
+   </div>
+</div>
+<script src="script.js"></script>
+
+<div id="about-us" class="about-us">
+    <div class="abt-text">
+       <p class="dbo">Desa Wisata Kalakijo</p>
+       <div class="dbo-text">Desa Wisata Kalakijo dikenal sebagai sentra kuliner ingkung ayam di Bantul, Yogyakarta. Masyarakat desa mempromosikan ingkung kuali, masakan ayam tradisional yang dulu hanya dibuat saat hajatan, untuk menarik wisatawan. Kini banyak warung ingkung di desa yang menyajikan masakan lezat ini setiap hari. Selain ingkung, desa juga menawarkan kerajinan dan kesenian lokal.</div>
+</div>
+</div>
+
+<div id="paket" class="wisata-fasil">
+    <div class="wisata-fasilitas">
+        <p class="wf-text">Wisata & Fasilitas</p>
+    </div>
+    <style>
+        .owl-carousel .item {
+            margin-top:0px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 18px;
+            height: 524px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .owl-nav button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgb(255, 33, 33);
+            color: rgb(0, 0, 0);
+            border: none;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        .owl-nav .owl-prev {
+            left: -50px;
+        }
+
+        .owl-nav .owl-next {
+            right: -50px;
+        }
+
+        @media (max-width: 768px) {
+            .owl-carousel {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .owl-nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5" style="margin-top: 68px;">
+        <div class="owl-carousel owl-theme">
+            <div class="card item">
+                <div class="card-img-top" >
+                    <img class="img-top" src="assets/ngepit.png">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Downhill Arena</h5>
+                  <p class="card-text">( Min 10 Orang, Rp 320.000 )</p>
+                  <a href="https://romsfun.com/download/pes-2014-pro-evolution-soccer-3-168806" class="btn btn-primary">Booking</a>
+                </div>
+              </div>
+              
+              <div class="card item">
+                <div class="card-img-top" >
+                    <img class="img-top" src="assets/perkumpulan card.png">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Bammbo Hall</h5>
+                  <p class="card-text">( 200 Orang, Rp 350.000/6 Jam )</p>
+                  <a href="https://romsfun.com/download/pes-2014-pro-evolution-soccer-3-168806" class="btn btn-primary">Booking</a>
+                </div>
+              </div>
+              <div class="card item">
+                <div class="card-img-top" >
+                    <img class="img-top" src="assets/dewikasari camp card.png">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Camp Ground</h5>
+                  <p class="card-text">( 1 Instansi, Rp 1.500.000/Hari )</p>
+                  <a  onclick="openNewPage()" class="btn btn-primary">Booking</a>
+                </div>
+              </div>
+              <div class="card item">
+                <div class="card-img-top" >
+                    <img class="img-top" src="assets/ingkung card.png">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Wisata Kuliner</h5>
+                  <p class="card-text">( Rp 25.000 - Rp 100.000/Porsi )</p>
+                  <a href="https://romsfun.com/download/pes-2014-pro-evolution-soccer-3-168806" class="btn btn-primary">Booking</a>
+                </div>
+              </div>
+              <div class="card item">
+                <div class="card-img-top" >
+                    <img class="img-top" src="assets/outbond card.png">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Wisata Outbond</h5>
+                  <p class="card-text">( 1 Kelompok, Rp 420.000/1 Paket )</p>
+                  <a href="https://romsfun.com/download/pes-2014-pro-evolution-soccer-3-168806" class="btn btn-primary">Booking</a>
+                </div>
+              </div>
+              <div class="card item">
+                <div class="card-img-top" >
+                    <img class="img-top" src="assets/jelajah sawah.png">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Jelajah sawah</h5>
+                  <p class="card-text">(  1 Kelompok, Rp 200.000/Hari )</p>
+                  <a href="https://romsfun.com/download/pes-2014-pro-evolution-soccer-3-168806" class="btn btn-primary">Booking</a>
+                </div>
+              </div>
+              <div class="card item">
+                <div class="card-img-top" >
+                    <img class="img-top" src="assets/gerobak sapi card.png">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Gerobak sapi</h5>
+                  <p class="card-text">( Max 5 orang, Rp 50.000/Putaran )</p>
+                  <a href="https://romsfun.com/download/pes-2014-pro-evolution-soccer-3-168806" class="btn btn-primary">Booking</a>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            if (window.innerWidth > 768) {
+                $(".owl-carousel").owlCarousel({
+                    loop: true,
+                    margin: 32,
+                    nav: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 2
+                        },
+                        1000: {
+                            items: 3
+                        }
+                    },
+                    navText: [
+                        "<span class='owl-prev'>&#8249;</span>",
+                        "<span class='owl-next'>&#8250;</span>"
+                    ]
+                });
+            }
+        });
+    </script>
+</div>
+
+<div id="galeri" class="galeri">
+    <div class="galer">
+        <p class="galer-text">Galeri</p>
+    </div>
+    <div class="images-marquee">
+        <div class="container">
+          <div class="marquee hover-pause">
+            <ul class="marquee-content">
+              <li><img src="assets/ayam.png" alt="Image 1"></li>
+              <li><img src="assets/jelajah sawah.png" alt="Image 2"></li>
+              <li><img src="assets/87019327_194950091878229_7691413664011649024_n.jpg" alt="Image 3"></li>
+              <li><img src="assets/P_20181107_122732(FILEminimizer).jpg" alt="Image 4"></li>
+              <li><img src="assets/ingkung_kuali_bantul2.jpg" alt="Image 5"></li>
+              
+              <li><img src="assets/ayam.png" alt="Image 1"></li>
+              <li><img src="assets/jelajah sawah.png" alt="Image 2"></li>
+              <li><img src="assets/87019327_194950091878229_7691413664011649024_n.jpg" alt="Image 3"></li>
+              <li><img src="assets/P_20181107_122732(FILEminimizer).jpg" alt="Image 4"></li>
+              <li><img src="assets/ingkung_kuali_bantul2.jpg" alt="Image 5"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="images-marquee reverse">
+        <div class="container">
+          <div class="marquee hover-pause">
+            <ul class="marquee-content">
+              <li><img src="assets/IMG-20241023-WA0038.jpg" alt="Image 10"></li>
+              <li><img src="assets/kmh.png" alt="Image 2"></li>
+              <li><img src="assets/WhatsApp-Image-2023-03-06-at-08.54.43-2.jpeg" alt="Image 3"></li>
+              <li><img src="assets/140223_medium.jpg" alt="Image 4"></li>
+              <li><img src="assets/20230522001.jpg" alt="Image 5"></li>
+        
+              <li><img src="assets/IMG-20241023-WA0038.jpg" alt="Image 10"></li>
+              <li><img src="assets/kmh.png" alt="Image 2"></li>
+              <li><img src="assets/WhatsApp-Image-2023-03-06-at-08.54.43-2.jpeg" alt="Image 3"></li>
+              <li><img src="assets/140223_medium.jpg" alt="Image 4"></li>
+              <li><img src="assets/20230522001.jpg" alt="Image 5"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p class="upload-keseruan">Upload keseruan kamu</p>
+
+      <div class="upload-container">
+        <label for="file-upload" class="custom-file-upload">
+          Pilih File
+        </label>
+        <input id="file-upload" type="file" />
+        <div class="file-name" id="file-name">Tidak ada file yang dipilih</div>
+      </div>
+      <script src="script.js"></script>
+</div>
+
+<div id="fandq" class="f-dan-q">
+    <div class="fdanq">
+        <p class="fdanq-text">Sering Ditanyakan</p>
+    </div>
+    <div class="accordion">
+        <div class="accordion-item">
+            <input type="checkbox" id="accordion1">
+            <label for="accordion1" class="accordion-item-title"><span class="icon"></span>Apakah diperbolehkan membawa makanan dan minuman dari luar?</label>
+            <div class="accordion-item-desc">Kami memperbolehkan pengunjung membawa makanan ringan. Namun, kami juga menyediakan area food court dengan berbagai pilihan makanan dan minuman.</div>
+        </div>
+    
+        <div class="accordion-item">
+            <input type="checkbox" id="accordion2">
+            <label for="accordion2" class="accordion-item-title"><span class="icon"></span>Apakah tersedia pemandu wisata?</label>
+            <div class="accordion-item-desc">Ya, kami menyediakan layanan pemandu wisata pada paket tertentu, seperti jelajah desa dan gerobak sapi. Kami menyediakan pemandu yang mahir berbahasa nasional maupun bahasa asing. Tidak ada biaya tambahan untuk pemandu wisata</div>
+        </div>
+    
+        <div class="accordion-item">
+            <input type="checkbox" id="accordion3">
+            <label for="accordion3" class="accordion-item-title"><span class="icon"></span>Apakah tempat wisata ini ramah untuk keluarga?</label>
+            <div class="accordion-item-desc">Ya, tempat wisata kami dirancang untuk semua usia, termasuk area bermain anak, jalur yang mudah diakses untuk stroller, dan fasilitas keluarga lainnya.</div>
+        </div>
+    </div>
+  </div>
+
+<div class="bawah">
+    <img src="assets/kalakijo-ijo.png" class="gambar-bawah" >
+   </div>
+</div>
+
+<div class="riview-page">
+<div class="riview">
+  <div class="container-angka">
+    <div class="num" data-val="50">0</div>
+    <span class="text-riv">Lebih kerja sama dengan instansi</span>
+  </div>
+  <div class="container-angka">
+    <div class="num" data-val="5">0</div>
+    <span class="text-riv">Bintang Riview Di Google</span>
+  </div>
+  <div class="container-angka">
+    <div class="num" data-val="500">0</div>
+    <span class="text-riv">Pengunjung PerBulan</span>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const valueDisplays = document.querySelectorAll(".num");
+
+      const runCounter = (valueDisplay) => {
+        let startValue = 0;
+        let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+        let duration = Math.max(Math.floor(1000 / endValue), 1); 
+
+        let counter = setInterval(() => {
+          startValue += 1;
+          valueDisplay.textContent = startValue;
+          if (startValue === endValue) {
+            clearInterval(counter);
+          }
+        }, duration);
+      };
+
+      const callback = (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const target = entry.target;
+            runCounter(target);
+            observer.unobserve(target);
+          }
+        });
+      };
+
+    
+      const observer = new IntersectionObserver(callback, {
+        threshold: 0.5, 
+      });
+
+      valueDisplays.forEach(valueDisplay => {
+        observer.observe(valueDisplay);
+      });
+    });
+  </script>
+</div>
+</div>
+
+<div class="footer">
+<div class="contact-us">
+  <div class="box">
+    <div class="logo">
+      <img src="assets/logo bawah.png" alt="Logo" />
+    </div>
+    <p>Jl. Pajangan Desa Kalakijo RT02, Kalak Ijo, Guwosari, Kec. Pajangan, Kabupaten Bantul, Daerah Istimewa Yogyakarta</p>
+    <p class="kontak-wa">Kontak kami</p>
+    <p class="wa"><a href="https://wa.me/085880315397">085880315397 (udin)</a></p>
+    <p class="wa2"><a href="https://wa.me/085880315397">085880641326 (imam)</a></p>
+  </div>
+
+  <!-- Box 2: Daftar Tulisan -->
+  <div class="box">
+    <p class="quick-links">Quick links</p>
+    <ul class="menu">
+      <li><a href="#fandq">FAQ</a></li>
+      <li>Galeri</li>
+      <li>Paket</li>
+      <li>About Us</li>
+      <li>Home</li>
+    </ul>
+    <div class="medsos">
+      <p class="med-sos"> Media sosial</p>
+      <ul class="logo-medsos">
+        <li><a href="https://www.instagram.com/kalakijodesawisata?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://wa.me/085880315397"><i class="fa-brands fa-whatsapp"></i></a></li>
+        <li><a href="https://www.facebook.com/share/14UAvtBFfV/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Box 3: Maps -->
+  <div class="box-maps">
+    <p class="text-maps">Lokasi kami</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3252.227834335605!2d110.30179349999999!3d-7.8872924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af8b52ed795a5%3A0xe55facfc9c8f8a78!2sDesa%20Wisata%20Kalakijo!5e1!3m2!1sid!2sid!4v1736255731846!5m2!1sid!2sid"
+      width="100%"
+      height="200"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="cprght">
+  <p class="copybenar">( Copyright ) Made by Hand N Love AHMDSAFIQ 2024</p>
+</div>
+</body>
+
+
+</body>

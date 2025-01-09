@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+.heading-atas {
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translate(-50%);
+    align-items: center;
+    justify-content: center;
+    max-width: 1920px;
+    width: 90%;
+    height: auto;
+    color: #137C62;
+    font-size: 64px;
+    line-height: 65px;
+    font-family: "Plus Jakarta Sans", serif;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 1920px;
+    width: 90%;
+    position: absolute;
+    height: auto;
+    top: 124px;
+    padding-bottom: 80px;
+}
+
+.bix {
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+.bix img {
+    width: 100%;
+    height: 240px;
+    border-radius: 8px;
+    object-fit: cover;
+    filter: brightness(0.7);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bix:hover img {
+    transform: scale(1.1);
+}
+
+.bix span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    font-family: "Plus Jakarta Sans", serif;
+
+}
+
+.container .bix:nth-child(7) {
+    grid-column: auto;
+}
+
+
+
+.footer {
+    position: absolute;
+    top: 1016px;
+    max-width: 1920px;
+    width: 100%;
+    height: 400px;
+    background-color: #ffffff;
+    z-index: 100;
+  }
+  .contact-us {
+    position: absolute;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8px;
+    box-sizing: border-box;
+    gap: 16px;
+    
+    left: 50%;
+    transform: translate(-50%);
+  }
+  
+  .box {
+    flex: 1;
+    color: #137C62;;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  .logo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+    font-family: "Plus Jakarta Sans", serif;
+  }
+  
+  .kontak-wa {
+    margin-top: 98px;
+    margin-bottom: 0%;
+    font-size: 24px;
+    color: #137C62;
+    font-family: "Plus Jakarta Sans", serif;
+  }
+  .wa {
+    margin-top: 0x;
+    margin-bottom: 0%;
+    color: #137C62;
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 12px;
+  }
+  .wa2 {
+    font-size: 12px;
+    margin-top: 0x;
+    color: #137C62;
+    font-family: "Plus Jakarta Sans", serif;
+  }
+  .wa a {
+    color: #137C62;
+  }
+  .wa2 a {
+    color: #137C62;
+  }
+  
+  .quick-links {
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    color: #137C62;
+    font-family: "Plus Jakarta Sans", serif;
+  }
+  
+  .med-sos {
+    margin-top: 42px;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    color: #137C62;
+    display: flex;
+    font-family: "Plus Jakarta Sans", serif;
+  }
+  
+  .logo-medsos {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    margin: 0 15px;
+    padding: 0%;
+  }
+  
+  i {
+    color: #137C62;
+    font-size: 32px;
+    transition: transform 0.3s ease;
+  }
+  .i:hover {
+    transform: translateY(-70px);
+  }
+  
+  
+  
+  /* Menu Daftar */
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin: 8px 0;
+    font-family: "Plus Jakarta Sans", serif;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    color: #137C62;
+  }
+  
+  .menu li:hover {
+    color: #555; /* Warna hover */
+    text-decoration: underline;
+  }
+  
+  .box-maps {
+    flex: 1;
+    background-color: #137C62;
+    color: #333;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 346px;
+  }
+  
+  .text-maps {
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: "Plus Jakarta Sans", serif;
+  }
+  /* Maps Box */
+  iframe {
+    border-radius: 8px;
+    height: 264px;
+  }
